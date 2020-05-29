@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forest"
+    tools:context=".gamemode">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TicTacToe"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#102030"
+        android:id="@+id/title"
+        android:shadowColor="#0A8888"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:fontFamily="sans-serif-black"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/mode3x3"
+        android:text="3X3"
+        android:gravity="center"
+        android:textColor="#102030"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/gamebck"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/mode4x4"
+        android:text="4X4"
+        android:gravity="center"
+        android:textColor="#102030"
+        android:textSize="20dp"
+        android:background="@drawable/gamebck"
+        android:layout_below="@id/mode3x3"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/mode5x5"
+        android:text="5X5"
+        android:gravity="center"
+        android:textColor="#102030"
+        android:textSize="20dp"
+        android:background="@drawable/gamebck"
+        android:layout_below="@id/mode4x4"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

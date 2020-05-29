@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/full"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:id="@+id/full1"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/full2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/title"
+            android:id="@+id/full3"
+           >
+
+            <TextView
+                android:id="@+id/playerw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:textSize="30sp"
+                android:textColor="#102030"
+                android:layout_below="@id/win"/>
+            <TextView
+                android:id="@+id/playerl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:textSize="30sp"
+                android:textColor="#102030"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/lose"/>
+
+            <TextView
+                android:id="@+id/win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#102030"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:textSize="30sp"
+                android:text="Won" />
+            <TextView
+                android:id="@+id/lose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#102030"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:textSize="30sp"
+                android:text="Lost"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/draw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#102030"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:textSize="30sp"
+                android:text="Draw"
+                android:layout_toRightOf="@id/win"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgw"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

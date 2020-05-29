@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frb"
+    tools:context=".page1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TicTacToe"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#102030"
+        android:id="@+id/title"
+        android:shadowColor="#0A8888"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <Button
+        android:id="@+id/singleplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gamebck"
+        android:text="solo mode"
+        android:textColor="#102030"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#102030"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dualplay"
+        android:layout_margin="10dp"
+        android:layout_below="@id/singleplay"
+        android:text="Dual mode"
+        android:background="@drawable/gamebck"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreboard"
+        android:textStyle="bold"
+        android:layout_below="@id/dualplay"
+        android:textColor="#102030"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gamebck"
+        android:text="Scoreboard"
+        />
+
+
+</RelativeLayout>
