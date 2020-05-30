@@ -67,32 +67,17 @@ public class game5x5 extends AppCompatActivity implements View.OnClickListener {
             pl2 = "X";
         player1.setText("Player1: " + A + "                         " + pl1);
         player2.setText("Player2: " + B + "                         " + pl2);
-        if(savedInstanceState!=null){
+        if(savedInstanceState!=null) {
             String savedpl1 = savedInstanceState.getString("pl1");
-            pl1=savedpl1;
+            pl1 = savedpl1;
             String savedpl2 = savedInstanceState.getString("pl2");
-            pl2=savedpl2;
-            for(int i=0;i<5;i++)
-                for(int j=0;j<5;j++){
-                    buttons[i][j].setText(savedInstanceState.getString(""+i+j));
+            pl2 = savedpl2;
+            for (int i = 0; i < 5; i++)
+                for (int j = 0; j < 5; j++) {
+                    buttons[i][j].setText(savedInstanceState.getString("" + i + j));
                 }
         }
-        else{
-        }
-
         dualmode();
-        if(!winner.isEmpty()){
-            Handler m = new Handler();
-            m.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    Intent p= new Intent(game5x5.this,finalpage.class);
-                    p.putExtra("winner",winner);
-                    startActivity(p);
-                }
-            },2000);
-        }
-
     }
 
     private void dualmode() {

@@ -69,7 +69,7 @@ public class game3x3 extends AppCompatActivity {
         else{
         }
 
-        if (B.equals("AI")) {
+        if (b.getBooleanExtra("solo",false)) {
             solomode();
 
         } else {
@@ -135,9 +135,11 @@ public class game3x3 extends AppCompatActivity {
                                 if (((buttons[k][0]).getText().toString().equals(buttons[k][1].getText().toString())) && ((buttons[k][0]).getText().toString().equals(buttons[k][2].getText().toString())) && (!buttons[k][0].getText().toString().isEmpty())) {
                                     if (buttons[k][0].getText().toString().equals(pl1)) {
                                         winner = A;
+                                        loser=B;
                                         Toast.makeText(getApplicationContext(), A + "wins!", Toast.LENGTH_SHORT).show();
                                     } else {
                                         winner = B;
+                                        loser=A;
                                         Toast.makeText(getApplicationContext(), B + "wins!", Toast.LENGTH_SHORT).show();
                                     }
                                     (buttons[k][0]).setBackgroundColor(R.drawable.title);
@@ -147,9 +149,11 @@ public class game3x3 extends AppCompatActivity {
                                 } else if (((buttons[0][k]).getText().toString().equals(buttons[1][k].getText().toString())) && ((buttons[0][k]).getText().toString().equals(buttons[2][k].getText().toString())) && (!buttons[0][k].getText().toString().isEmpty())) {
                                     if (buttons[0][k].getText().toString().equals(pl1)) {
                                         winner = A;
+                                        loser=B;
                                         Toast.makeText(getApplicationContext(), A + "wins!", Toast.LENGTH_SHORT).show();
                                     } else {
                                         winner = B;
+                                        loser=A;
                                         Toast.makeText(getApplicationContext(), B + "wins!", Toast.LENGTH_SHORT).show();
                                     }
                                     (buttons[0][k]).setBackgroundColor(R.drawable.title);
@@ -159,9 +163,11 @@ public class game3x3 extends AppCompatActivity {
                                 } else if ((buttons[0][0].getText().toString().equals(buttons[1][1].getText().toString())) && (buttons[0][0].getText().toString().equals(buttons[2][2].getText().toString())) && (!buttons[0][0].getText().toString().isEmpty())) {
                                     if (buttons[0][0].getText().toString().equals(pl1)) {
                                         winner = A;
+                                        loser=B;
                                         Toast.makeText(getApplicationContext(), A + "wins!", Toast.LENGTH_SHORT).show();
                                     } else {
                                         winner = B;
+                                        loser=A;
                                         Toast.makeText(getApplicationContext(), B + "wins!", Toast.LENGTH_SHORT).show();
                                     }
                                     (buttons[0][0]).setBackgroundColor(R.drawable.title);
@@ -171,9 +177,11 @@ public class game3x3 extends AppCompatActivity {
                                 } else if ((buttons[0][2].getText().toString().equals(buttons[1][1].getText().toString())) && (buttons[0][2].getText().toString().equals(buttons[2][0].getText().toString())) && (!buttons[0][2].getText().toString().isEmpty())) {
                                     if (buttons[0][0].getText().toString().equals(pl1)) {
                                         winner = A;
+                                        loser=B;
                                         Toast.makeText(getApplicationContext(), A + "wins!", Toast.LENGTH_SHORT).show();
                                     } else {
                                         winner = B;
+                                        loser=A;
                                         Toast.makeText(getApplicationContext(), B + "wins!", Toast.LENGTH_SHORT).show();
                                     }
                                     (buttons[0][2]).setBackgroundColor(R.drawable.title);
@@ -196,7 +204,7 @@ public class game3x3 extends AppCompatActivity {
                                     startActivity(p);
                                     finish();
                                 }
-                            },2000);
+                            },3000);
                         }
                         else{
                             boolean g;

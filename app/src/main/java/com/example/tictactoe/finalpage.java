@@ -26,6 +26,7 @@ public class finalpage extends AppCompatActivity {
         draw=p.getStringExtra("draw");
         winner=p.getStringExtra("winner");
         loser=p.getStringExtra("loser");
+
         if(draw.equals("no"))
             h.setText(winner);
         else

@@ -35,6 +35,7 @@ public class solo extends AppCompatActivity {
                     Intent b = new Intent(solo.this,game3x3.class);
                     b.putExtra("player1",Playername);
                     b.putExtra("player2",Player_Ai);
+                    b.putExtra("solo",true);
                     startActivity(b);
                     finish();
                 }
