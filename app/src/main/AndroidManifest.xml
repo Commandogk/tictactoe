@@ -10,8 +10,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".score"
-            android:configChanges="screenLayout">  </activity>
+        <activity android:name=".rules"></activity>
+        <activity
+            android:name=".score"
+            android:configChanges="screenLayout"></activity>
         <activity android:name=".finalpage" />
         <activity android:name=".game5x5" />
         <activity android:name=".gamemode" />
@@ -19,8 +21,9 @@
         <activity android:name=".game3x3" />
         <activity android:name=".dual" />
         <activity android:name=".solo" />
-        <activity android:name=".page1"
-            android:configChanges="screenLayout"/>
+        <activity
+            android:name=".page1"
+            android:configChanges="screenLayout" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

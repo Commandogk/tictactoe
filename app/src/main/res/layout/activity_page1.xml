@@ -58,6 +58,18 @@
         android:background="@drawable/gamebck"
         android:text="Scoreboard"
         />
+    <Button
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rules"
+        android:textStyle="bold"
+        android:textColor="#102030"
+        android:layout_margin="10dp"
+        android:background="@drawable/gamebck"
+        android:text="Rules"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
 
 
 </RelativeLayout>

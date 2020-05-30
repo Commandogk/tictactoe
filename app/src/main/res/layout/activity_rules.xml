@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rules"
+    android:background="@drawable/title">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TicTacToe"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#102030"
+        android:id="@+id/title"
+        android:shadowColor="#0A8888"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textSize="30dp"
+        android:id="@+id/head"
+        android:gravity="center"
+        android:textColor="#102030"
+        android:text="Rules"
+        android:shadowColor="#0A8888"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:fontFamily="sans-serif-black"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textr"
+        android:layout_below="@id/head"
+        android:layout_above="@id/rule_back">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#102030"
+        android:textStyle="italic"
+        android:id="@+id/p"
+        android:textSize="23sp"
+        android:text="1- To win the game either of the player should capture anyone of the row/column/diagonal of the board.\n 2- X/O is assigned to the players randomly.\n3- Player X always make the first move irrespective the player number.\n4- In Solo mode if AI is X ,to start the game click a random box in the board.\n5- Solo Mode is available for 3X3 board only.\n\n HOPE YOU ENJOY THE GAME !! "
+        />
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebck"
+        android:id="@+id/rule_back"
+        android:text="Back"
+        android:gravity="center"
+        android:textColor="#102030"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

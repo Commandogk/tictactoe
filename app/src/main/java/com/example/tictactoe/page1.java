@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class page1 extends AppCompatActivity {
     TextView title;
     int i=1;
-    Button singleplay,dualplay,scoreboard;
+    Button singleplay,dualplay,scoreboard,rule;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ public class page1 extends AppCompatActivity {
         title= findViewById(R.id.title);
         singleplay=findViewById(R.id.singleplay);
         dualplay=findViewById(R.id.dualplay);
+        rule=findViewById(R.id.rules);
         scoreboard=findViewById(R.id.scoreboard);
         Intent c=getIntent();
         i=c.getIntExtra("i",1);
@@ -52,7 +53,13 @@ public class page1 extends AppCompatActivity {
 
             }
         });
-
+        rule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a= new Intent(page1.this,rules.class);
+                startActivity(a);
+            }
+        });
 
 
     }
