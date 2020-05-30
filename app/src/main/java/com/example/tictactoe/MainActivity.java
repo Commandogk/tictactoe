@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Intent a= new Intent(MainActivity.this,page1.class);
                 startActivity(a);
+                finish();
             }
         },3000);
-
-    }
+        }
 }

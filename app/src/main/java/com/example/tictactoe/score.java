@@ -69,7 +69,7 @@ public class score extends AppCompatActivity {
             editor.putString("loser_"+k,loser[k]);
             editor.putString("draw_"+k,draw[k]);
         }
-        if(i==10)
+        if(i==20)
             i=1;
         editor.putInt("i",i);
         editor.apply();
